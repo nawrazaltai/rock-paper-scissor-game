@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(27, 27, 105) 50%, rgb(95, 27, 27) 50%);
+}
+
+.top {
+    width: 100%;
+    /* border-bottom: 1px dashed white; */
+}
+
+nav {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(55deg, rgb(97, 97, 184) 50%, rgb(168, 81, 81) 50%);
+    width: 60%;
+    height: 6em;
+    margin: 0 auto;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(26, 25, 25);
+    padding: 4em;
+    border: 4px solid rgb(255, 255, 255);
+}
+
+.player h1{
+    margin-left: 1em;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.cpu h1 {
+    margin-right: 1em;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.score {
+    width: 80%;
+    display: flex;
+    /* border: 1px solid green; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player-score-box h1, .cpu-score-box h1 {
+    background-color: rgb(253, 251, 251);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    color:rgb(34, 103, 194);
+    font-size: 3rem;
+}
+
+.cpu-score-box h1 {
+    color: rgb(216, 52, 52);
+}
+
+.round-count {
+    color: white;
+    font-size: 2.2rem;
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    height: 80vh;
+    justify-content: space-between;
+}
+
+.left button {
+    /* width: 5em; */
+    /* height: 5em; */
+    border: 10px solid rgb(91, 148, 221);
+    padding: 5em;
+    border-radius: 50%;
+    color: rgb(19, 97, 199);
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    background-image: url('./rock.jpg');
+    background-size: 65%;
+    background-position: 50% 55%;
+    background-repeat: no-repeat;
+}
+
+
+.left button:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+    background-image: url('./paper.jpg');
+    background-size: 58%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+.left button:nth-child(3) {
+    background-color: rgb(255, 255, 255);
+    background-image: url('./scissor.jpg');
+    background-size: 58%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.rockBtn, .paperBtn, .scissorBtn{
+    background-color: transparent;
+    /* border: 3px solid rgb(91, 148, 221); */
+    /* border-radius: 50px; */
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: rgb(91, 148, 221);
+}
+.rockBtn:hover, .paperBtn:hover, .scissorBtn:hover {
+    box-shadow: 0 0 20px 0 rgb(91, 148, 221) inset, 0 0 20px 2px rgb(91, 148, 221);
+    border: 3px solid rgb(91, 148, 221);
+    cursor: pointer;
+}
+
+.middle {
+    display: flex;
+    /* border: 1px solid white; */
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-card, .right-card {
+    /* opacity: 0; */
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.164);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: start;
+    border:1px solid white;
+}
+
+.playerRockSpan, .playerPaperSpan, .playerScissorSpan {
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    border: 10px solid rgb(91, 148, 221);
+    padding: 4em;
+    border-radius: 50%;
+    color: rgb(19, 97, 199);
+    background-color: rgb(255, 255, 255);
+    background-image: url('./rock.jpg');
+    background-size: 65%;
+    background-position: 50% 55%;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+    transition: ease 3s;
+}
+
+.playerPaperSpan {
+    background-image: url('./paper.jpg');
+    background-size: 60%;
+    background-position: 50% 50%;
+}
+
+.playerScissorSpan {
+    background-image: url('./scissor.jpg');
+    background-size: 60%;
+    background-position: 50% 50%; 
+}
+
+
+.left-card-text {
+    /* position: static; */
+    margin-top: 1em;
+    padding-top: .5em;
+    font-size: 1.7rem;
+    font-weight: 700;
+    border-top: 1px solid white;
+    color: rgba(255, 255, 255, 0.938);
+}
+
+.right span {
+    text-align: center;
+    border: 10px solid rgb(214, 84, 84);
+    /* padding: 5em; */
+    border-radius: 20%;
+    color: rgb(179, 20, 20);
+    /* font-size: 1.1rem; */
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+}
+
+.rockSpan {
+    padding: 5em;
+    font-size: 1.1rem;
+    background-color: rgb(255, 255, 255);
+    background-image: url('./rock.jpg');
+    background-size: 55%;
+    background-position: 50% 58%;
+    background-repeat: no-repeat;
+}
+
+.right span:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+    background-image: url('./paper.jpg');
+    background-size: 45%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 5em;
+}
+
+.right span:nth-child(3) {
+    background-color: rgb(255, 255, 255);
+    background-image: url('./scissor.jpg');
+    background-size: 45%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 5em;
+}
+
+.rockSpanHidden, .paperSpanHidden, .scissorSpanHidden {
+    position: absolute;
+    border-radius: 20%;
+    border: 10px solid rgb(214, 84, 84);
+    padding: 4em;
+    background-color: rgb(255, 255, 255);
+    background-image: url('./rock.jpg');
+    background-size: 55%;
+    background-position: 50% 58%;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+    opacity: 0;
+    transition: ease 3s;
+}
+
+.paperSpanHidden {
+    background-image: url('./paper.jpg');    
+}
+
+.scissorSpanHidden {
+    background-image: url('./scissor.jpg');
+}
+
+.right-card-text {
+    margin-top: 1em;
+    padding-top: .5em;
+    font-size: 1.7rem;
+    font-weight: 700;
+    border-top: 1px solid white;
+    color: rgba(255, 255, 255, 0.938);
+
+}
+
+
+.showSpan {
+    transition: ease-in-out .3s;
+    opacity: 1;
+    position: static;
+}
+
+
+.resultBoard, .playerWinBoard, .CPUwinBoard{
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 15em;
+    width: 14em;
+    padding: 2em;
+    background-color: rgb(61, 58, 58);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.playerWinBoard {
+    background-color: rgb(38, 38, 143);
+}
+
+.CPUwinBoard {
+    background-color: rgb(158, 40, 40);
+}
+
+.showResultBoard {
+    transition: ease 1s;
+    opacity: 1;
+}
+
+.winner {
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.resultBoardBtn {
+    background:  rgb(58, 109, 24);
+    border: 1px solid white;
+    font-weight: 600;
+    color:rgb(250, 249, 249);
+    border-radius: 8px;
+    padding: 1em 3em;
+}
+
+.resultBoardBtn:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissor</title>
+</head>
+<body>
+    <main class="container">
+        <div class="top">
+            <nav>
+                <div class="player">
+                    <h1>PLAYER</h1>
+                </div>
+                <div class="score">
+                    <div class="player-score-box"><h1 class="playerH1">
+                        0
+                    </h1></div>
+                    <div class="div">
+                        <h1 class="round-count"></h1>
+                    </div>
+                    <div class="cpu-score-box">
+                        <h1 class="cpuH1">0</h1>
+                    </div>
+                </div>
+                <div class="cpu">
+                    <h1>CPU</h1>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="bottom">
+            <div class="left">
+                <button class="rockBtn"></button>
+                <button class="paperBtn"></button>
+                <button class="scissorBtn"></button>
+            </div>
+            <div class="middle">
+                <section class="left-card">
+                    <span class="playerRockSpan"></span>
+                    <span class="playerPaperSpan"></span>
+                    <span class="playerScissorSpan"></span>
+                    <p class="left-card-text"></p>
+                </section>
+
+                <section class="resultBoard">
+                    <p class="winner"></p>
+                    <button class="resultBoardBtn">Next Round</button>
+                </section>
+
+                <section class="right-card">
+                    <span class="rockSpanHidden"></span>
+                    <span class="paperSpanHidden"></span>
+                    <span class="scissorSpanHidden"></span>
+                    <p class="right-card-text"></p>
+                </section>
+            </div>
+            <div class="right">
+                <span class="rockSpan"></span>
+                <span class="paperSpan"></span>
+                <span class="scissorSpan"></span>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
