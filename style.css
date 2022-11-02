@@ -89,7 +89,7 @@ nav {
     font-size: 1.1rem;
     font-weight: 700;
     background-color: rgb(255, 255, 255);
-    background-image: url('./rock.jpg');
+    background-image: url('./images/rock.jpg');
     background-size: 65%;
     background-position: 50% 55%;
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@ nav {
 
 .left button:nth-child(2) {
     background-color: rgb(255, 255, 255);
-    background-image: url('./paper.jpg');
+    background-image: url('./images/paper.jpg');
     background-size: 58%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@ nav {
 
 .left button:nth-child(3) {
     background-color: rgb(255, 255, 255);
-    background-image: url('./scissor.jpg');
+    background-image: url('./images/scissor.jpg');
     background-size: 58%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -115,8 +115,6 @@ nav {
 
 .rockBtn, .paperBtn, .scissorBtn{
     background-color: transparent;
-    /* border: 3px solid rgb(91, 148, 221); */
-    /* border-radius: 50px; */
     -webkit-transition: all .25s ease-in-out;
     transition: all .15s ease-in-out;
     color: rgb(91, 148, 221);
@@ -129,7 +127,6 @@ nav {
 
 .middle {
     display: flex;
-    /* border: 1px solid white; */
     width: 60%;
     justify-content: space-between;
     align-items: center;
@@ -157,7 +154,7 @@ nav {
     border-radius: 50%;
     color: rgb(19, 97, 199);
     background-color: rgb(255, 255, 255);
-    background-image: url('./rock.jpg');
+    background-image: url('./images/rock.jpg');
     background-size: 65%;
     background-position: 50% 55%;
     background-repeat: no-repeat;
@@ -166,13 +163,13 @@ nav {
 }
 
 .playerPaperSpan {
-    background-image: url('./paper.jpg');
+    background-image: url('./images/paper.jpg');
     background-size: 60%;
     background-position: 50% 50%;
 }
 
 .playerScissorSpan {
-    background-image: url('./scissor.jpg');
+    background-image: url('./images/scissor.jpg');
     background-size: 60%;
     background-position: 50% 50%; 
 }
@@ -203,7 +200,7 @@ nav {
     padding: 5em;
     font-size: 1.1rem;
     background-color: rgb(255, 255, 255);
-    background-image: url('./rock.jpg');
+    background-image: url('./images/rock.jpg');
     background-size: 55%;
     background-position: 50% 58%;
     background-repeat: no-repeat;
@@ -211,7 +208,7 @@ nav {
 
 .right span:nth-child(2) {
     background-color: rgb(255, 255, 255);
-    background-image: url('./paper.jpg');
+    background-image: url('./images/paper.jpg');
     background-size: 45%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -220,7 +217,7 @@ nav {
 
 .right span:nth-child(3) {
     background-color: rgb(255, 255, 255);
-    background-image: url('./scissor.jpg');
+    background-image: url('./images/scissor.jpg');
     background-size: 45%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -233,7 +230,7 @@ nav {
     border: 10px solid rgb(214, 84, 84);
     padding: 4em;
     background-color: rgb(255, 255, 255);
-    background-image: url('./rock.jpg');
+    background-image: url('./images/rock.jpg');
     background-size: 55%;
     background-position: 50% 58%;
     background-repeat: no-repeat;
@@ -243,11 +240,11 @@ nav {
 }
 
 .paperSpanHidden {
-    background-image: url('./paper.jpg');    
+    background-image: url('./images/paper.jpg');    
 }
 
 .scissorSpanHidden {
-    background-image: url('./scissor.jpg');
+    background-image: url('./images/scissor.jpg');
 }
 
 .right-card-text {
